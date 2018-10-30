@@ -1,0 +1,22 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data:rw
+      - ./initdata/init.sql:/docker-entrypoint-initdb.d/10-init.sql
+    ports:
+      - "5432"
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      pool: 5
+  web:
+    build: .
+    command: python word_kurd/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
