@@ -7,17 +7,16 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Word',
+            name="Word",
             fields=[
-                ('word_id', models.AutoField(primary_key=True, serialize=False)),
-                ('name', models.CharField(max_length=200)),
-                ('describtion', models.CharField(max_length=200)),
-                ('creattion_date', models.DateTimeField(verbose_name='date published')),
+                ("word_id", models.AutoField(primary_key=True, serialize=False)),
+                ("name", models.CharField(max_length=200)),
+                ("describtion", models.CharField(max_length=200)),
+                ("creattion_date", models.DateTimeField(verbose_name="date published")),
             ],
-        ),
+        )
     ]
