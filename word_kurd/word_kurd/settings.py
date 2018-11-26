@@ -14,7 +14,7 @@ import os
 from django.urls import reverse_lazy
 
 LOGIN_URL = reverse_lazy('login')
-LOGIN_REDIRECT_URL = reverse_lazy('words')
+LOGIN_REDIRECT_URL = reverse_lazy('index')
 LOGOUT_REDIRECT_URL = reverse_lazy('login')
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
