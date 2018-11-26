@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on localhost:8000
+From: webmaster@localhost
+To: ahmed@giga.com
+Date: Sun, 25 Nov 2018 18:26:23 -0000
+Message-ID: <154317038331.82.15984196593992066776@eeddce1b2a29>
+
+
+You're receiving this email because you requested a password reset for your user account at localhost:8000.
+
+Please go to the following page and choose a new password:
+
+http://localhost:8000/accounts/reset/Mg/51l-81f1866beec12d9682fb/
+
+Your username, in case you've forgotten: neo_x
+
+Thanks for using our site!
+
+The localhost:8000 team
+
+
+
+-------------------------------------------------------------------------------
