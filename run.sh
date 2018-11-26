@@ -1,3 +1,3 @@
-python word_kurd/manage.py makemigrations
-python word_kurd/manage.py migrate
-python word_kurd/manage.py runserver 0.0.0.0:8000
+python app/manage.py makemigrations
+python app/manage.py migrate
+python app/manage.py runserver 0.0.0.0:8000
