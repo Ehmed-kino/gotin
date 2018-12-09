@@ -11,3 +11,9 @@ jobs:
         environment:
           POSTGRES_USER: docker
           POSTGRES_DB: kurd_word
+    steps:
+      - checkout  # checkout source code to working directory
+      - run:
+          command: |  # use pipenv to install dependencies
+            sudo pip install pipenv
+            pipenv install
