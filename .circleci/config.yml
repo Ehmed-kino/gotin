@@ -23,6 +23,7 @@ jobs:
       - image: circleci/python:3.6.7
     working_directory: ~/repo
     steps:
+      - checkout
       - run:
           name: Install awscli
           command: sudo pip install awscli
