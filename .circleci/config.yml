@@ -28,11 +28,8 @@ jobs:
           name: Install awscli
           command: sudo pip install awscli
       - run:
-          command: pwd
-      - run:
-          command: ls -la
-          # name: Deploy to S3
-          # command: aws s3 sync ~/repo/app/app/sent_email/ s3://${SECRET_BUCKET} --delete
+          name: Deploy to S3
+          command: aws s3 sync ~/repo/app/app/sent_email/ s3://${SECRET_BUCKET} --delete
 
 workflows:
   version: 2
